@@ -11,13 +11,34 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.uniqueLinesCaseSensitive",
+        "onCommand:extension.shuffleLines",
+        "onCommand:extension.reverseLines",
+        "onCommand:extension.joinLines",
+        "onCommand:extension.splitLines"
     ],
     "main": "./out/src/extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
+        "commands": [
+        {
+            "command": "extension.uniqueLinesCaseSensitive",
+            "title": "Unique Lines (Case Sensitive)"
+        },
+        {
+            "command": "extension.shuffleLines",
+            "title": "Shuffle Lines"
+        },
+        {
+            "command": "extension.reverseLines",
+            "title": "Reverse Lines"
+        },
+        {
+            "command": "extension.joinLines",
+            "title": "Join Lines"
+        },
+        {
+            "command": "extension.splitLines",
+            "title": "Split Lines"
         }]
     },
     "scripts": {
