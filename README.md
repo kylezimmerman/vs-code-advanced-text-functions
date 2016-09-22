@@ -1,65 +1,70 @@
-# advanced-text-functions README
+# Advanced Text Functions
 
-This is the README for your extension "advanced-text-functions". After writing up a brief description, we recommend including the following sections.
+Advanced Text Functions is a Visual Studio Code extension that provides more advanced text manipulation functions that are included by default.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Instead of having to install a separate extension for *every minor text feature*, the aim of this project is to include common text functions in one extension.
 
-For example if there is an image subfolder under your extension project workspace:
+- Unique Lines (Remove duplicate lines)
+- Shuffle Lines
+- Join Lines
+- Split Lines
 
-\!\[feature X\]\(images/feature-x.png\)
+## Requests
+I'm happy to accept enhancements ideas (better yet pull requests) for new features, however the aim of this project is to include general purpose text functions. **If the feature is specific to a format, language, or framework it probably belongs in it's own extension.**
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Examples
+### Unique Lines
+From
+```
+a
+b
+b
+a
+```
+To
+```
+a
+b
+```
 
-## Requirements
+### Shuffle Lines
+From
+```
+a
+b
+b
+a
+```
+To (different every time!)
+```
+b
+a
+b
+a
+```
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Join Lines
+From
+```
+a
+b
+c
+```
+To
+```
+a, b, c
+```
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+### Split Lines
+From
+```
+a, b, c
+```
+To
+```
+a
+b
+c
+```
